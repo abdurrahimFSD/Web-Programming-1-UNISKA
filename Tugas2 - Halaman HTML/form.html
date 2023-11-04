@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <a href="index.html"> << Kembali ke halaman utama </a>
+
+    <h1>Registrasi Kursus</h1>
+
+    <p>Masukkan data dengan lengkap :</p>
+
+    <table border="1" cellspacing="0" cellpadding="5" width="513px">
+        <form>
+            <tr>
+                <td colspan="2">
+                    <h2>Biodata :</h2>
+                </td>
+            </tr>
+            <tr>
+                <td width="35%">
+                    <label for="namaLengkap">Nama Lengkap :</label>
+                </td>
+                <td>
+                    <input type="text" name="namaLengkap" id="namaLengkap" placeholder="nama lengkap" autofocus required autocomplete="off">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ttl">Tempat, Tanggal Lahir :</label>
+                </td>
+                <td>
+                    <input type="text" name="ttl" id="ttl" placeholder="tempat lahir" required autocomplete="off">
+                    <input type="date" name="ttl" id="ttl">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="telepon-email">Telepn / Email :</label>
+                </td>
+                <td>
+                    <input type="number" name="telepon-email" id="telepon-email" placeholder="08123456789" required autocomplete="off" >
+                    <input type="email" name="telepon-email" id="telepon-email" placeholder="email@gmail.com"required autocomplete="off" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="jenisKelamin">Jenis Kelamin :</label>
+                </td>
+                <td>
+                    <label>
+                        <input type="radio" name="jenisKelamin" id="jenisKelamin" value="Pria">Pria
+                    </label>
+                    <label>
+                        <input type="radio" name="jenisKelamin" id="jenisKelamin" value="Wanita">Wanita
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pekerjaan">Pekerjaan :</label>
+                </td>
+                <td>
+                    <select name="pekerjaan" id="pekerjaan">
+                        <option> - pilih pekerjaan - </option>
+                        <option value="Data-Science">Data-Science</option>
+                        <option value="Cyber-Security">Cyber-Security</option>
+                        <option value="Machine-Learning">Machine-Learning</option>
+                        <option value="DevOps">DevOps</option>
+                        <option value="Software Engineer">Software Engineer</option>
+                        <option value="FullStack-Developer">FullStack-Developer</option>
+                        <option value="Cloud-Computing">Cloud-Computing</option>
+                        <option value="Netword-Engineer">Netword-Engineer</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="alamat">Alamat</label>
+                </td>
+                <td>
+                    <textarea name="alamat" id="alamat" cols="40" rows="4" required autocomplete="off"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3>Materi Kursus:</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="materiKursus">Materi Kursus : </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="materiKursus" id="materiKursus" value="course1">The Complete JavaScript Course 2023 <br>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="materiKursus id="materiKursus" value="course2">GraphQL with React <br>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="materiKursus" id="materiKursus" value="course3">React for Beginners<br>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="materiKursus id="materiKursus" value="course4">Node.js - The Complete RESTful API Masterclass (2023) <br>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="materiKursus" id="materiKursus" value="course5">React, NodeJS, Express & MongoDB - The MERN Fullstack Guide
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Simpan</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </form>
+        
+    </table>
+</body>
+</html>
